@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            margin: 0;
+        }
+        .image{
+            background-image: url(BackgroundRecipeImage.png);
+            background-size: cover; 
+            background-position: center; 
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            filter: brightness(70%);
+            z-index: -1;
+            top: 0;
+            left: 0;  
+        }
+        img{
+            width: 200px;
+            height: 130px;
+            border-radius: 100px;
+        }
+        .top{
+            display: flex;
+            background-color: whitesmoke;
+            width: 700px;
+            height: 50px;
+            border-radius: 10px;
+            margin: 10px auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 350px);  /* 3 cards per row */
+            gap:30px;                              /* space between cards */
+            padding: 50px;
+            padding-right: 10px;
+            margin-left: 180px;
+            cursor: pointer;
+        }
+         .options{
+            width:230px;
+            height: 310px;
+            border-radius: 20px;
+            background-color: whitesmoke;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+        button{
+            width: 100px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: orange;
+            border: none;
+        }
+        button:hover{
+            transition: transform 0.5s ease;
+            transform: scale(1.1);
+        }
+    </style>
+    <body>
+        <div class="image"></div>
+        <div class="top">
+           <h2> Available Catering Services</h2>
+        </div>
+        <div class="container">
+        <div class="options">
+            <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/b/bf/KFC_logo.svg/3840px-KFC_logo.svg.png">
+            <p>
+            <b>Type:</b> Fast Food Catering<br>
+           <b>Known for:</b> Fried chicken & quick service<br>
+            <b>Suitable for:</b> Parties, birthdays<br>
+            <b>Price range: </b> ₹300-₹800 per plate
+            </p>
+            <button onclick="contact()">Contact</button>
+        </div>
+        <div class="options">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Dominos_pizza_logo.svg/500px-Dominos_pizza_logo.svg.png">
+            <p>
+            <b>Type:</b> Fast Food Catering<br>
+           <b>Known for:</b> Pizza catering<br>
+            <b>Suitable for:</b> Parties, college events<br>
+            <b>Price range: </b> ₹200-₹600 per plate
+            </p>
+            <button onclick="contact()">Contact</button>
+        </div>
+        <div class="options">
+            <img src="https://p1.hiclipart.com/preview/692/868/868/mcdonalds-logo-corporate-identity-logos-text-yellow-orange-line-png-clipart.jpg">
+            <p>
+            <b>Type:</b> Fast Food Catering<br>
+           <b>Known for:</b> Burgers & quick meals<br>
+            <b>Suitable for:</b> Kids parties, casual events<br>
+            <b>Price range: </b> ₹200-₹500 per plate
+            </p>
+            <button onclick="contact()">Contact</button>
+        </div>
+        <div class="options">
+            <img src="https://www.ihcltata.com/_next/image?q=75&url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Focl5w36p%2Fprod5%2F8757801411df698afde868311539f52da7349088-756x487.jpg&w=3840">
+            <p>
+            <b>Type:</b> Luxury Catering<br>
+           <b>Known for:</b> Premium wedding & corporate catering<br>
+            <b>Suitable for:</b> Weddings, high-end events<br>
+            <b>Price range: </b>₹2000+ per plate
+            </p>
+            <button onclick="contact()">Contact</button>
+        </div>
+        <div class="options">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/c2/92/8f/getlstd-property-photo.jpg?h=-1&s=1&w=500">
+            <p>
+            <b>Type:</b> Restaurant & Catering Services<br>
+           <b>Known for:</b> Live grills, buffet catering<br>
+            <b>Suitable for:</b> Parties, corporate events<br>
+            <b>Price range: </b> ₹600-₹1500 per plate
+            </p>
+            <button onclick="contact()">Contact</button>
+        </div>
+        <div class="options">
+            <img src="https://www.logo.wine/a/logo/ITC_Limited/ITC_Limited-Logo.wine.svg">
+            <p>
+            <b>Type:</b> Luxury Hotel Catering<br>
+           <b>Known for:</b> Fine dining & large events<br>
+            <b>Suitable for:</b> Weddings, corporate functions<br>
+            <b>Price range: </b> ₹1800+ per plate
+            </p>
+            <button onclick="contact()">Contact</button>
+        </div>
+        <div class="options">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Radisson_Blu_logo.svg/1280px-Radisson_Blu_logo.svg.png">
+            <p>
+            <b>Type:</b> Hotel Catering<br>
+           <b>Known for:</b> Elegant buffet & international cuisine<br>
+            <b>Suitable for:</b> Weddings, corporate events<br>
+            <b>Price range: </b> ₹1500-₹3000 per plate
+            </p>
+            <button onclick="contact()">Contact</button>
+        </div>
+        <div class="options">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Sodexo_logo.svg">
+            <p>
+            <b>Type:</b> Corporate Catering<br>
+           <b>Known for:</b> Office meals & facility management<br>
+            <b>Suitable for:</b> Offices, institutions<br>
+            <b>Price range: </b> ₹150-₹400 per meal
+            </p>
+            <button onclick="contact()">Contact</button>
+        </div>
+        <div class="options">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/49/Compass_Group.svg/1280px-Compass_Group.svg.png">
+            <p>
+            <b>Type:</b> Corporate & Institutional Catering<br>
+           <b>Known for:</b> Large-scale food services<br>
+            <b>Suitable for:</b> Offices, schools, hospitals<br>
+            <b>Price range: </b> ₹150-₹500 per meal
+            </p>
+            <button onclick="contact()">Contact</button>
+        </div>
+        </div>
+        <script>
+            function contact(){
+                window.location.href = "Project-3(Contact page).HTML";
+            }
+        </script>
+    </body>
+</html>

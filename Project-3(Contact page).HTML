@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <title>CONTACT</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .image{
+            background-image: url(BackgroundRecipeImage.png);
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            filter: brightness(60%);
+            z-index: -1;
+        }
+        .header {
+            background-color: navajowhite;
+            color: salmon;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-box {
+            background-color: white;
+            padding: 25px;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+        }
+
+        fieldset {
+            border: none;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: salmon;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ff7f7f;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+<body>
+<div class="image"></div>
+<div style="padding: 100px;">
+<div class="container">
+    <div class="contact-box">
+        <h2 style="text-align:center;">Contact Me</h2>
+
+        <fieldset>
+
+            <label>Enter your event</label><br>
+            <textarea id="event"></textarea>
+
+            <label>Enter your Requirements</label><br>
+            <textarea id="req"></textarea>
+
+            <input type="submit" value="Send Message" id="submitBtn">
+        </fieldset>
+
+        <div class="contact-info">
+            <p>Email: recipes@mywebsite.com</p>
+            <p>Phone: 9876543210</p>
+        </div>
+    </div>
+</div>
+    </div>
+<script>
+document.getElementById("submitBtn").addEventListener("click", function() {
+    
+    let eventText = document.getElementById("event").value;
+    let reqText = document.getElementById("req").value;
+
+    if(eventText === "" || reqText === "") {
+        alert("Enter your details!");
+    } 
+    else {
+        alert("Your message has been forwarded successfully!");
+    }
+
+});
+</script>
+
+</body>
+</html>
